@@ -29,6 +29,7 @@ Partial Class Form1
         Me.ResultBox = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.CalcButton = New System.Windows.Forms.Button()
+        Me.AltCalc = New System.Windows.Forms.Button()
         CType(Me.xBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.powerBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -86,18 +87,28 @@ Partial Class Form1
         '
         'CalcButton
         '
-        Me.CalcButton.Location = New System.Drawing.Point(255, 147)
+        Me.CalcButton.Location = New System.Drawing.Point(176, 146)
         Me.CalcButton.Name = "CalcButton"
         Me.CalcButton.Size = New System.Drawing.Size(75, 23)
         Me.CalcButton.TabIndex = 6
         Me.CalcButton.Text = "Calculate"
         Me.CalcButton.UseVisualStyleBackColor = True
         '
+        'AltCalc
+        '
+        Me.AltCalc.Location = New System.Drawing.Point(329, 146)
+        Me.AltCalc.Name = "AltCalc"
+        Me.AltCalc.Size = New System.Drawing.Size(75, 23)
+        Me.AltCalc.TabIndex = 7
+        Me.AltCalc.Text = "AltCalc"
+        Me.AltCalc.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(560, 355)
+        Me.Controls.Add(Me.AltCalc)
         Me.Controls.Add(Me.CalcButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ResultBox)
@@ -121,4 +132,5 @@ Partial Class Form1
     Friend WithEvents ResultBox As RichTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents CalcButton As Button
+    Friend WithEvents AltCalc As Button
 End Class
